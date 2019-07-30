@@ -61,5 +61,3 @@ Sublect2: Nicolas
 Advanced Robotics Centre (ARC) NUS
 Original soure code
 tracking code: https://www.pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/ 
-
-Liscense?
