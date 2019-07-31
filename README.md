@@ -31,19 +31,17 @@ For medical personals
 
 For the operator
 To build a dataset
-1. In main2, input location of Vicon data excel in CSV, then count row that contains data in excel start from row 1 count as 0 until the header row which should have a word "#Field", put that number in column_label.
+1. In main2, input location of Vicon data excel in CSV, then find the header row which should have a word "#Field", put that number in column_label.
 Input location of markers coordinates data excel in CSV. The file should have 6 columns contains THIx, THIy, KNEx, KNEy, TIBx, and TIBy in order.
 2. Print some data out to check for an error.
-3. Input hip angle column by finding hip angle column in excel and divide it by 3, then put X. follow by that rounded number. 
-ex. column 50 -> 50/3= 16.6666666667 -> 'X.16'
-The knee and ankle angle should be the next value.
-ex. hipColumn= 'X.16', kneeColumn = 'X.17',ankleColumn = ankle 'X.18'
+3. Identify what side the markers are placed and run that cell.
 4. Print out to check the data.
 5. Display a graph for the next step.
 6. The hard part, find the frame that matches with Vicon data row(that row-the first data row). For example, the initial contact frame is 257 and the match data is in row 70 and the first row of this data is 14, so an actual frame is 70-14 = 56. So, the frameMatch = 257 and ViconDataIndex = 56.
 7. Input camera sampling rate(FPS) and Vicon sampling rate. Please consider that video in slow motion will have more FPS.
 8. Run until the last cell, edit your dataset filename and save location to export as CSV excel file.
 9. You have done a good job.
+
 To build a model
 1. Input train data location and test data location.
 2. Input your model filename.
